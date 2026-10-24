@@ -1,0 +1,7 @@
+---
+// Any await before cache.set() is enough; real layouts await data, CMS calls, etc.
+await new Promise((r) => setTimeout(r, 10));
+Astro.cache.set({ tags: ['from-layout'] });
+console.log('[layout] cache.set from-layout called');
+---
+<html><body><slot /></body></html>

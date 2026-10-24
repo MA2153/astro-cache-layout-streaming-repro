@@ -1,0 +1,21 @@
+{
+  "name": "astro-cache-layout-streaming-repro",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "astro build",
+    "start": "node dist/server/entry.mjs",
+    "repro": "./repro.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@astrojs/node": "^11.1.9",
+    "astro": "^7.4.2"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22.23.4"
+  }
+}
